@@ -1,0 +1,32 @@
+{
+  "name": "app_praktyki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "clientstart": "./client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "cookie-session": "*",
+    "cors": "^2.8.5",
+    "express": "*",
+    "express-flash": "*",
+    "express-session": "*",
+    "macaddress": "*",
+    "neo4j-driver": "*",
+    "node-fetch": "*",
+    "random-bytes": "^1.0.0",
+    "request": "^2.88.2",
+    "simple-ssh": "^1.0.0",
+    "xlsx": "*"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.4"
+  }
+}

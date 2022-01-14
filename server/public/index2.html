@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="buildings-container" style="display:none;">
+            <select class="dropdown-container" id="buildings-select" name="buildings"></select>
+            <div class="btn-container">
+                <button class="btn" onclick="getRooms()">Wybierz</button>
+            </div>
+
+        </div>
+        <div id="rooms-container" style="display:none;">
+            <select class="dropdown-container" id="rooms-select" name="rooms"></select>
+            <div class="btn-container">
+                <button class="btn" onclick="getSockets()">Wybierz</button>
+            </div>
+        </div>
+        <div id="sockets-container" style="display:none;">
+            <select class="dropdown-container" id="sockets-select" name="sockets"></select>
+            <div class="btn-container">
+                <button class="btn" onclick="getSocketData()">Wybierz</button>
+            </div>
+        </div>
+        <div class="article" id="socket-container" style="display:none;">
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script>
+        var buildings = document.getElementById('buildings-select');
+        var rooms = document.getElementById('rooms-select');
+        var sockets = document.getElementById('sockets-select');
+        buildings.addEventListener('change', handleBuildingChange);
+        rooms.addEventListener('change', handleRoomChange);
+        sockets.addEventListener('change', handleSocketChange);
+        getBuildings()
+    </script>
+</body>
+</html>
