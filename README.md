@@ -72,7 +72,7 @@ Czcionki:
   
   ## Uruchomienie aplikacji:
   
-    W katalogu głównym:
+W katalogu głównym:
 
   ```bash
   npm start
