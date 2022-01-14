@@ -40,3 +40,40 @@ ARUBA_LOGIN={ "userName":"user","password": "password" }
 ```bash
 npm start
 ```
+
+## Aplikacja mobilna
+  Korzystając z platformy Expo: https://expo.dev oraz npm należy pobrać następujące moduły:
+
+  W katalogu głównym:
+
+  ```bash
+  npm install
+  expo install
+  ```
+
+
+## Lub ręcznie pobrać wymagane moduły:
+
+Nawigacja:
+
+	npm install @react-navigation/native
+	expo install react-native-screens react-native-safe-area-context
+	npm install @react-navigation/native-stack
+
+Navigation drawer (potrzebny do stworzenia dwóch nawigacji):
+
+	npm install @react-navigation/drawer
+	expo install react-native-gesture-handler react-native-reanimated
+  
+Czcionki:
+
+	expo install expo-font @expo-google-fonts/roboto
+	expo install expo-app-loading
+  
+  ## Uruchomienie aplikacji:
+  
+    W katalogu głównym:
+
+  ```bash
+  npm start
+  ```
